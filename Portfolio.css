@@ -1,0 +1,123 @@
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+    }
+
+    .fa:hover {
+    transform: scale(2);
+    }
+
+    .fa-instagram {
+        background: #00000000;
+        color: white;
+    }
+
+    .fa-facebook {
+        background: #00000000;
+    color: white;
+    }
+
+  .fa-whatsapp {
+    background: #00000000;
+    color: #ffffff;
+}
+
+
+
+    body {
+        background-color: #000000;
+    }
+
+h1 {
+    font-size: 50px; /* Ukuran teks */
+    margin-top: 5px; /* Jarak antara gambar dan teks */
+    color: #b9b9b9;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 25px; /* Ukuran teks */
+    text-align: center; /* Menyusun teks agar berada di tengah */
+    margin-top: 5px; /* Jarak antara gambar dan teks */
+    color: #b9b9b9;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    background-color: #e49a1000; /* Warna latar belakang menu */
+    text-align: right; /* Menyusun elemen di tengah */
+    overflow: hidden; /* Mengatasi masalah elemen keluar dari batas */
+}
+
+/* Item menu */
+.menu a {
+    display: inline-block; /* Menampilkan menu item secara horizontal */
+    color: rgb(255, 255, 255); /* Warna teks */
+    padding: 25px 25px; /* Jarak antara teks dan tepi tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    font-size: 25px; /* Ukuran font */
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu li {
+    display: inline-block; /* Menampilkan menu item secara horizontal */
+    color: rgb(255, 255, 255); /* Warna teks */
+    padding: 25px 25px; /* Jarak antara teks dan tepi tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    font-size: 25px; /* Ukuran font */
+    text-align: left;
+}
+
+/* Efek saat hover */
+.menu a:hover {
+    background-color: #ff9100; /* Warna latar belakang saat hover */
+    transform: scale(1.2);
+    animation-duration: 1s;
+}
+
+/* Aktif (menu yang dipilih) */
+.menu a.active {
+    background-color: #6a00ce4b; /* Warna latar belakang saat aktif */
+}
+.left {
+    text-align: left;
+    justify-content: left;
+}
+
+.slide {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+/* Ukuran untuk layar kecil (HP) */
+@media screen and (max-width: 600px) {
+    .box {
+        width: 100%; /* Buat elemen memenuhi lebar layar */
+        font-size: 16px;
+    }
+}
+
+/* Ukuran untuk layar besar (Tablet ke atas) */
+@media screen and (min-width: 601px) {
+    .box {
+        width: 300px;
+        font-size: 20px;
+    }
+}
