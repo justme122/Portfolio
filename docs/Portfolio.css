@@ -10,7 +10,7 @@
     }
 
     .fa:hover {
-    transform: scale(2);
+    transform: scale(2); 
     }
 
     .fa-instagram {
@@ -28,7 +28,10 @@
     color: #ffffff;
 }
 
-
+    .fa-bars {
+        background: #000000;
+        color: white;
+    }
 
     body {
         background-color: #000000;
@@ -75,6 +78,7 @@ p {
     text-decoration: none; /* Menghilangkan garis bawah pada teks */
     font-size: 25px; /* Ukuran font */
     text-align: left;
+    padding-right: 50%;
 }
 
 /* Efek saat hover */
@@ -99,6 +103,12 @@ p {
     animation: slideIn 1s forwards;
 }
 
+.slide2 {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards;
+}
+
 @keyframes slideIn {
     to {
         opacity: 1;
@@ -107,17 +117,27 @@ p {
 }
 
 /* Ukuran untuk layar kecil (HP) */
-@media screen and (max-width: 600px) {
-    .box {
-        width: 100%; /* Buat elemen memenuhi lebar layar */
-        font-size: 16px;
+@media screen and (max-width: 480px) {
+    .menu a {
+        padding: 8px;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
-}
-
-/* Ukuran untuk layar besar (Tablet ke atas) */
-@media screen and (min-width: 601px) {
-    .box {
-        width: 300px;
-        font-size: 20px;
+    .fa {
+        padding-top: 100px;
+    }
+    .slide2 h1 {
+        padding-top: 20%;
+        font-size: 50px;
+    }
+    .slide p {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        padding-left: 6px;
+    }
+    .fa:hover {
+        transform: scale(1.2)
     }
 }
