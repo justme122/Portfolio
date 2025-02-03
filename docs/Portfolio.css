@@ -55,9 +55,43 @@ p {
     font-family: Arial, sans-serif;
 }
 
+.comment {
+    color: #ffffff;
+    width: 40%;
+    background-color: #ff9100;
+    border-radius: 10px;
+    font-style: italic;
+    padding: 20px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.comment:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.certification {
+    color: #ffffff;
+    width: 40%;
+    background-color: #ff9100;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.certification:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.center {
+    text-align: center;
+}
+
 .menu {
     background-color: #e49a1000; /* Warna latar belakang menu */
-    text-align: right; /* Menyusun elemen di tengah */
+    text-align: center; /* Menyusun elemen di tengah */
     overflow: hidden; /* Mengatasi masalah elemen keluar dari batas */
 }
 
@@ -69,16 +103,6 @@ p {
     text-decoration: none; /* Menghilangkan garis bawah pada teks */
     font-size: 25px; /* Ukuran font */
     transition: transform 0.5s ease-in-out;
-}
-
-.menu li {
-    display: inline-block; /* Menampilkan menu item secara horizontal */
-    color: rgb(255, 255, 255); /* Warna teks */
-    padding: 25px 25px; /* Jarak antara teks dan tepi tombol */
-    text-decoration: none; /* Menghilangkan garis bawah pada teks */
-    font-size: 25px; /* Ukuran font */
-    text-align: left;
-    padding-right: 50%;
 }
 
 /* Efek saat hover */
@@ -103,10 +127,11 @@ p {
     animation: slideIn 1s forwards;
 }
 
-.slide2 {
+.slides {
     opacity: 0;
     transform: translateX(100%);
     animation: slideIn 1s forwards;
+    padding-left: 40%;
 }
 
 @keyframes slideIn {
@@ -126,10 +151,6 @@ p {
     .fa {
         padding-top: 100px;
     }
-    .slide2 h1 {
-        padding-top: 20%;
-        font-size: 50px;
-    }
     .slide p {
         justify-content: center;
         align-items: center;
@@ -137,7 +158,23 @@ p {
         font-size: 25px;
         padding-left: 6px;
     }
+    .slides {
+        padding-left: 60px;
+        font-size: 50px;
+    }
     .fa:hover {
         transform: scale(1.2)
+    }
+    .comment {
+        width: 90%;
+    }
+}
+
+
+/* Ukuran untuk layar besar (Tablet ke atas) */
+@media screen and (min-width: 601px) {
+    .box {
+        width: 300px;
+        font-size: 20px;
     }
 }
